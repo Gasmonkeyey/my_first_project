@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обработка событий JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header id="main-header">
+            <h1>Практическая работа №12</h1>
+            <p>Обработка событий в JavaScript</p>
+        </header>
+
+        <section id="tasks-section">
+
+            <div class="task-area" id="task1">
+                <h3><span class="badge">1</span> Базовые обработчики событий</h3>
+                <div class="event-demo">
+                    <button id="basic-btn" class="btn">Нажми меня</button>
+                    <div id="basic-output" class="output">Статус: ожидание события</div>
+                    <div class="color-box" id="color-box">
+                        <span>Наведи курсор</span>
+                    </div>
+                    <div id="mouse-output" class="output">Координаты мыши: —</div>
+                </div>
+            </div>
+
+            <div class="task-area" id="task2">
+                <h3><span class="badge">2</span> События клавиатуры</h3>
+                <div class="keyboard-demo">
+                    <input type="text" id="key-input" placeholder="Нажмите клавиши здесь...">
+                    <div id="key-output" class="output">Информация о клавише: —</div>
+                </div>
+            </div>
+
+            <div class="task-area" id="task3">
+                <h3><span class="badge">3</span> Делегирование событий</h3>
+                <div class="delegation-demo">
+                    <button id="add-item-btn" class="btn">+ Добавить элемент</button>
+                    <div id="item-list" class="item-list">
+                        <div class="item" data-id="1">Элемент 1 <span class="delete">✕</span></div>
+                        <div class="item" data-id="2">Элемент 2 <span class="delete">✕</span></div>
+                        <div class="item" data-id="3">Элемент 3 <span class="delete">✕</span></div>
+                    </div>
+                    <div id="delegation-output" class="output">Выбрано: 0</div>
+                </div>
+            </div>
+
+            <div class="task-area" id="task4">
+                <h3><span class="badge">4</span> Предотвращение поведения</h3>
+                <a href="#" id="prevent-link" class="prevent-link">Перейти по ссылке</a>
+                <form id="prevent-form" class="prevent-form">
+                    <input type="text" id="prevent-input" placeholder="Введите текст...">
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+                <div id="prevention-output" class="output">Результат: —</div>
+            </div>
+
+            <div class="task-area" id="task5">
+                <h3><span class="badge">5</span> Кастомные события</h3>
+                <button id="trigger-custom" class="btn">Запустить кастомное событие</button>
+                <button id="multiple-listeners" class="btn btn-outline">Несколько обработчиков</button>
+                <div id="custom-output" class="output">Кастомное событие: —</div>
+            </div>
+
+            <div class="task-area" id="task6">
+                <h3><span class="badge">6</span> События загрузки и ошибок</h3>
+                <button id="load-image" class="btn">Загрузить изображение</button>
+                <button id="load-error" class="btn btn-danger">Симулировать ошибку</button>
+                <div id="image-container" class="image-container">
+                    <div class="placeholder">
+                        <span>🖼️</span>
+                        <p>Изображение появится здесь</p>
+                    </div>
+                </div>
+                <div id="loading-output" class="output">Статус загрузки: ожидание</div>
+            </div>
+
+            <div class="task-area" id="task7">
+                <h3><span class="badge">7</span> Таймеры и асинхронность</h3>
+                <button id="start-timer" class="btn">▶ Запустить таймер</button>
+                <button id="stop-timer" class="btn btn-danger">■ Остановить</button>
+                <button id="debounce-btn" class="btn btn-outline">Тест Debounce</button>
+                <button id="throttle-btn" class="btn btn-outline">Тест Throttle</button>
+                <div id="timer-output" class="output timer-display">⏱ Таймер: 0с</div>
+                <div id="async-output" class="output">Асинхронные события: —</div>
+            </div>
+
+        </section>
+
+        <footer id="main-footer">
+            <p>Откройте консоль (F12) для проверки тестов</p>
+        </footer>
+    </div>
+
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="events-tasks.js"></script>
+    <script src="events-tests.js"></script>
+</body>
+</html>
