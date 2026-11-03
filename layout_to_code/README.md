@@ -1,0 +1,1 @@
+Ссылка на Figma: https://www.figma.com/design/8ynT8Gw2RsAE05yPSmNmfm/PR8_Maket_Storozhev?node-id=0-1&m=dev&t=ewMh8J9tbiD5pxhD-1
